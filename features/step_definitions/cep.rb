@@ -55,3 +55,18 @@ Então(/^devo visualizar o erro tratado$/) do
   CEP["cep"]["campos"].each{|cep| expect(@response.body).to_not include(cep)}
   expect(@response.code).to eq 200
 end
+
+
+Dado(/^que realizo um post na api fake$/) do
+  @uri = "https://jsonplaceholder.typicode.com/"
+end
+
+Quando(/^informar dados do post$/) do
+  @url = @uri + "comments"
+  @response = HTTParty.post(@url, body: {teste: 123456})
+end
+
+Então(/^devo verificar que o post foi alterado$/) do
+  puts @response.body
+  expect(@response.code).to eq 201
+end

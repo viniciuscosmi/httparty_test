@@ -46,3 +46,9 @@ Cenario: Verificar cep com caracteres especiais
     Dado que realizo uma consulta na api de cep
     Quando informar um cep em branco
     Então devo visualizar o erro
+
+@post
+Cenario: Alterar post
+    Dado que realizo um post na api fake
+    Quando informar dados do post
+    Então devo verificar que o post foi alterado
