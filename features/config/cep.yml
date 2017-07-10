@@ -1,0 +1,20 @@
+cep:
+  valido: 09260430/json
+  campos: [
+    "cep",
+    "logradouro",
+    "complemento",
+    "bairro",
+    "localidade",
+    "uf",
+    "unidade",
+    "ibge",
+    "gia"
+]
+  inexistente: 01101011/json
+  letras: asda10ee/json
+  menos_numeros: 1234/json
+  mais_numeros: 32113231231132323144543/json
+  caracter_especial: 1234567$/json
+  branco: /json
+  teste: viacep.com.br/ws/RS/Porto Alegre/Domingos/json/ 
