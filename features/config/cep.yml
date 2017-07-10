@@ -1,5 +1,5 @@
 cep:
-  valido: 09260430/json
+  valido: 09520010/json
   campos: [
     "cep",
     "logradouro",
@@ -10,6 +10,17 @@ cep:
     "unidade",
     "ibge",
     "gia"
+]
+  resultado: [
+    "09520-010",
+    "Rua João Pessoa",
+    "lado ímpar",
+    "Centro",
+    "São Caetano do Sul",
+    "SP",
+    "",
+    "3548807",
+    "6361"
 ]
   inexistente: 01101011/json
   letras: asda10ee/json
